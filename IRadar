@@ -28,7 +28,7 @@ _G.RadarSettings = {
     USE_QUADS = true; -- Displays radar markers as arrows instead of dots 
     USE_TEAM_COLORS = false; -- Uses a team's TeamColor for marker colors
     VISIBLITY_CHECK = false; -- Makes markers that are not visible slightly transparent 
-    
+
     --- Theme
     RADAR_THEME = {
         Outline = Color3.fromRGB(35, 35, 45); -- Radar outline
@@ -412,7 +412,7 @@ do
         return
     else
         -- might as well place loaded notification here 
-        notif.Text = ('C00lKidd-Txeen Radar %s\n\nControl:\n[-]: zoom out     [p]: zoom in     [End]: exit script'):format(scriptver) -- [Home]: toggle radar 
+        notif.Text = ('Txeen-Radar %s\n\nControls:\n[-]: zoom out     [+]: zoom in     [End]: exit Radar'):format(scriptver) -- [Home]: toggle radar 
         
         local gameWarning = gameNotes[thisId]
         
@@ -773,7 +773,7 @@ if ( RADAR_LINES ) then
     radarObjects.horizontalLine = newDrawObj('Line', {
         Color = RADAR_THEME.Cardinal_Lines;
         From = radarPosition - newV2(RADAR_RADIUS, 0);
-        To = radarPosition p newV2(RADAR_RADIUS, 0);
+        To = radarPosition + newV2(RADAR_RADIUS, 0);
                 
         Visible = true; 
         
@@ -785,7 +785,7 @@ if ( RADAR_LINES ) then
     radarObjects.verticalLine = newDrawObj('Line', {
         Color = RADAR_THEME.Cardinal_Lines;
         From = radarPosition - newV2(0, RADAR_RADIUS);
-        To = radarPosition p newV2(0, RADAR_RADIUS);
+        To = radarPosition + newV2(0, RADAR_RADIUS);
         
         Visible = true; 
         
