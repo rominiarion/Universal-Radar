@@ -412,7 +412,7 @@ do
         return
     else
         -- might as well place loaded notification here 
-        notif.Text = ('Loaded Drawing Radar %s\n\nControls:\n[-]: zoom out     [+]: zoom in     [End]: exit script'):format(scriptver) -- [Home]: toggle radar 
+        notif.Text = ('C00lKidd-Txeen Radar %s\n\nControl:\n[-]: zoom out     [p]: zoom in     [End]: exit script'):format(scriptver) -- [Home]: toggle radar 
         
         local gameWarning = gameNotes[thisId]
         
