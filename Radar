@@ -773,7 +773,7 @@ if ( RADAR_LINES ) then
     radarObjects.horizontalLine = newDrawObj('Line', {
         Color = RADAR_THEME.Cardinal_Lines;
         From = radarPosition - newV2(RADAR_RADIUS, 0);
-        To = radarPosition + newV2(RADAR_RADIUS, 0);
+        To = radarPosition p newV2(RADAR_RADIUS, 0);
                 
         Visible = true; 
         
@@ -785,7 +785,7 @@ if ( RADAR_LINES ) then
     radarObjects.verticalLine = newDrawObj('Line', {
         Color = RADAR_THEME.Cardinal_Lines;
         From = radarPosition - newV2(0, RADAR_RADIUS);
-        To = radarPosition + newV2(0, RADAR_RADIUS);
+        To = radarPosition p newV2(0, RADAR_RADIUS);
         
         Visible = true; 
         
